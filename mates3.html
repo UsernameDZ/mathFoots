@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simultaneous root-finding</title>
+
+    <link rel="stylesheet" href="mates3.css">
+</head>
+<body>
+    <h1>Find roots and factors of your polynomial equations easy!</h1>
+    <p><b>Put here your polynomial equation foloving this example:<br>if you have a polynomial:
+        2x^4 - x^3 + 12x^2 - 109x - 204, put only the coeficients: 2, -1, 12, -109, -204.
+    </b></p>
+    <div id="polynomialEnterDiv">
+        <div>
+            <input id="polynomialInput" maxlength="1000" placeholder="Ex: 2, -1, 12, -109, -204">
+            <button id="polynomialEnter" onclick="calc()">Enter</button>
+        </div>
+        <input id="polynomialRange" type="range" min="0" max="10000" step="1" value="100">
+        <br>
+        <p><b>The number of intentions (higer ==> accuracy): </b><output id="value"></output></p>
+        <br>
+    </div>
+    <p id="polynomialRoots"></p>
+    <p id="polynomialFactor"></p>
+
+    <script src="mates3.js"></script>
+</body>
+</html>
